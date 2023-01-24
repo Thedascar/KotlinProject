@@ -1,10 +1,19 @@
-class Conta {
-    var titular = ""
-    var numero = 0
+import javax.print.DocFlavor.STRING
+
+class Conta(var titular : String , val numero : Int) {
     var saldo = 0.0
+        private set
+
+    //constructor(titular : String,numero : Int){
+    //    this.titular = titular
+    //   this.numero = numero
+    //}
+
 
     fun deposita(valor : Double){
-        this.saldo += valor
+        if(valor > 0) {
+            this.saldo += valor
+        }
     }
 
     fun saca(valor : Double){
@@ -13,16 +22,29 @@ class Conta {
         }
     }
 
-    fun transfere(contaRecebe : Conta,valor : Double){
+    fun transfere(contaRecebe : Conta,valor : Double) : Boolean{
         if(this.saldo > valor){
-            val valorDaTrasnferencia = valor
-            val titular = this.titular
-            val quemRecebe = contaRecebe.titular
-            this.saldo -= valor
-            contaRecebe.saldo += valor
-            println("O $titular fez uma transferência para $quemRecebe no valor de R$: $valorDaTrasnferencia")
-            return
+            this.saca(valor)
+            contaRecebe.deposita(valor)
+            return true
         }
-        println("O valor está acima do saldo")
+            return false
     }
+
+    // metodos getter e setter
+
+
+
+    //fun getSaldo() : Double{
+    //    return this.saldo
+    //}
+
+    // fun setSaldo(valor : Double){
+    //    if(saldo > 0){
+    //        this.saldo = valor
+    //        return
+    //    }
+    //}
 }
+
+
