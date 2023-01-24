@@ -1,4 +1,3 @@
-import javax.print.DocFlavor.STRING
 
 class Conta(var titular : String , val numero : Int) {
     var saldo = 0.0
