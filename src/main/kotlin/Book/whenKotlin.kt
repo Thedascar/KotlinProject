@@ -1,5 +1,0 @@
-package Book
-
-fun main(){
-
-}
