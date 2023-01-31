@@ -27,3 +27,6 @@ fun testaContasDiferentes() {
     println("Após o saque")
     println(contaPoupanca.saldo)
 }
+fun main(){
+    testaContasDiferentes()
+}
