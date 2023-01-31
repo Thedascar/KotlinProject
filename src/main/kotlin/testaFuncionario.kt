@@ -5,7 +5,7 @@
             cpf = "789.456.123-28",
             salario = 1000.00
         )
-        println("Funcionário")
+        println("Analista")
         println("Nome: ${Lucas.nome}")
         println("Cpf: ${Lucas.cpf}")
         println("Salario S/Bonus: ${Lucas.salario}")
@@ -42,6 +42,12 @@
             plr = 2580.87
         )
 
+        val James = Auxiliar(
+            nome = "James",
+            cpf = "798.456.549-45",
+            salario = 1251.45
+        )
+
         println("Diretor")
         println("Nome: ${Bob.nome}")
         println("Cpf: ${Bob.cpf}")
@@ -71,10 +77,23 @@
 
         println()
 
+        println("Auxiliar")
+        println("Nome: ${James.nome}")
+        println("Cpf: ${James.cpf}")
+        println("Salario S/Bonus: ${James.salario}")
+        println( println("Salario C/Bonus: ${James.bonificacao}"))
+
+        println()
+
         val calculadora = CalculadoraBonificacao()
         calculadora.registra(Lucas)
         calculadora.registra(Aline)
         calculadora.registra(Bob)
         calculadora.registra(Bacon)
+        calculadora.registra(James)
         println("Total de bonificação: ${calculadora.total}")
+    }
+
+    fun main(){
+        testaFuncionario()
     }
