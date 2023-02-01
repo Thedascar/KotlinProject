@@ -4,7 +4,8 @@
            nome = "Lucas",
            cpf = "123.456.789-98",
            salario = 1000.00,
-           senha = 1000)
+           senha = 1000
+       )
 
         val diretora = Diretor(
             nome = "Aline",
@@ -17,7 +18,7 @@
 
         val sistema = SistemaInterno()
         sistema.entra(gerente,1000)
-        sistema.entra(diretora,2000)
+        sistema.entra(diretora,200)
 
     }
     fun testaFuncionario(){
@@ -108,8 +109,8 @@
 
         val calculadora = CalculadoraBonificacao()
         calculadora.registra(Lucas)
-        //calculadora.registra(Aline)
-        //calculadora.registra(Bob)
+        calculadora.registra(Aline)
+        calculadora.registra(Bob)
         calculadora.registra(Bacon)
         calculadora.registra(James)
         println("Total de bonificação: ${calculadora.total}")

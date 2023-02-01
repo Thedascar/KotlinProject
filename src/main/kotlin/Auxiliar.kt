@@ -5,7 +5,7 @@ class Auxiliar(
 ) : Funcionario(
     nome = nome,
     cpf = cpf,
-    salario = salario
+    salario = salario,
 ) {
     override val bonificacao: Double
         get(){
