@@ -1,5 +1,7 @@
 
-abstract class Conta(var titular : String, val numero : Int) {
+abstract class Conta(
+    var titular : String,
+    val numero : Int) {
     var saldo = 0.0
         protected set
 
@@ -16,15 +18,6 @@ abstract class Conta(var titular : String, val numero : Int) {
     }
 
     abstract fun saca(valor : Double)
-
-    fun transfere(contaRecebe : Conta,valor : Double) : Boolean{
-        if(this.saldo >= valor){
-            this.saldo -= (valor)
-            contaRecebe.deposita(valor)
-            return true
-        }
-            return false
-    }
 
     // metodos getter e setter
 

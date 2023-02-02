@@ -9,11 +9,10 @@ class Diretor(
     cpf = cpf,
     salario = salario,
     senha = 2000
-) {
+){
 
     override val bonificacao : Double
         get() {
             return (salario + salario * 0.3)  + plr
         }
-
 }

@@ -1,7 +1,7 @@
 class contaCorrente(
     titular: String,
     numero: Int
-) : Conta(
+) : ContaTrasnferivel(
     titular = titular,
     numero = numero)
 {

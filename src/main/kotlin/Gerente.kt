@@ -8,7 +8,7 @@ class Gerente(
     cpf = cpf,
     salario = salario,
     senha = 1000
-) {
+){
 
     override val bonificacao : Double
         get() {

@@ -15,10 +15,19 @@
             plr = 2500.00
         )
 
+        val cliente = Cliente(
+            nome = "José",
+            cpf = "456.789.123-45",
+            senha = 1000
+        )
+
 
         val sistema = SistemaInterno()
         sistema.entra(gerente,1000)
         sistema.entra(diretora,200)
+        sistema.entra(cliente,1000)
+
+
 
     }
     fun testaFuncionario(){
@@ -48,7 +57,7 @@
         println("Salario S/Bonus: ${Aline.salario}")
         println( println("Salario C/Bonus: ${Aline.bonificacao}"))
 
-        if(Aline.autenticacao(1234) == true){
+        if(Aline.autentica(1234) == true){
             println("Autenticado com sucesso")
         }else{
             println("Senha incorreta")
@@ -77,7 +86,7 @@
         println( println("Salario C/Bonus: ${Bob.bonificacao}"))
         println("Bonus plr ${Bob.plr}")
 
-        if(Bob.autenticacao(4321) == true){
+        if(Bob.autentica(4321) == true){
             println("Autenticado com sucesso")
         }else{
             println("Senha incorreta")
