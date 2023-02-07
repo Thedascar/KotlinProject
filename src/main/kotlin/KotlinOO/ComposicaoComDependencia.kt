@@ -10,6 +10,7 @@ fun main() {
     film.like()
     film.like()
     film.showLikes()
+    arrayListOf<>()
 
 }
 
