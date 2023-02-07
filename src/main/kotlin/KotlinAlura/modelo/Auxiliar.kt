@@ -1,4 +1,4 @@
-package KotlinAlura
+package KotlinAlura.modelo
 
 class Auxiliar(
     nome: String,

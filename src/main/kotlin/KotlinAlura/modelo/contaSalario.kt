@@ -1,4 +1,6 @@
-package KotlinAlura
+package KotlinAlura.modelo
+
+import KotlinAlura.modelo.Conta
 
 class contaSalario(
     titular: String,

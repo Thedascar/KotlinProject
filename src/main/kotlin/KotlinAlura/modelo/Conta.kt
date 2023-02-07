@@ -1,4 +1,4 @@
-package KotlinAlura
+package KotlinAlura.modelo
 abstract class Conta(
     var titular : String,
     val numero : Int) {

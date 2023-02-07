@@ -1,4 +1,4 @@
-package KotlinAlura
+package KotlinAlura.modelo
 
 abstract class Funcionario(
     val nome: String,

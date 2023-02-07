@@ -1,4 +1,8 @@
-package KotlinAlura
+package KotlinAlura.teste
+
+import KotlinAlura.modelo.contaCorrente
+import KotlinAlura.modelo.contaPoupanca
+import KotlinAlura.modelo.contaSalario
 
 fun testaContasDiferentes() {
     val contaCorrente = contaCorrente(
@@ -16,7 +20,7 @@ fun testaContasDiferentes() {
         numero = 8956
         )
 
-    println("KotlinAlura.Conta Corrente")
+    println("KotlinAlura.modelo.Conta Corrente")
     println("Titular: ${contaCorrente.titular}")
     println("Número: ${contaCorrente.numero}")
     contaCorrente.deposita(1000.00)
@@ -27,7 +31,7 @@ fun testaContasDiferentes() {
 
     println()
 
-    println("KotlinAlura.Conta Poupança")
+    println("KotlinAlura.modelo.Conta Poupança")
     println("Titular: ${contaPoupanca.titular}")
     println("Número: ${contaPoupanca.numero}")
     contaPoupanca.deposita(1000.00)
@@ -37,12 +41,12 @@ fun testaContasDiferentes() {
 
     println()
 
-    println("KotlinAlura.Conta Salario")
+    println("KotlinAlura.modelo.Conta Salario")
     println("Titular: ${contaSalario.titular}")
     println("Número: ${contaSalario.numero}")
     contaSalario.deposita(500.00)
     contaSalario.saca(200.00)
-    //KotlinAlura.contaSalario.transfere(KotlinAlura.contaPoupanca, 500.00)
+    //KotlinAlura.modelo.contaSalario.transfere(KotlinAlura.modelo.contaPoupanca, 500.00)
     println(contaSalario.saldo)
 }
 fun main(){

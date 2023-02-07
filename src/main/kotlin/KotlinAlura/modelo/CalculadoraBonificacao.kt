@@ -1,4 +1,4 @@
-package KotlinAlura
+package KotlinAlura.modelo
 
 class CalculadoraBonificacao {
 
@@ -7,9 +7,9 @@ class CalculadoraBonificacao {
     fun registra(funcionario: Funcionario){
          this.total += funcionario.bonificacao
     }
-// fun registra(gerente: KotlinAlura.Gerente){
+// fun registra(gerente: KotlinAlura.modelo.Gerente){
         //     this.total += gerente.bonificacao
-        //} fun registra(diretor: KotlinAlura.Diretor){
+        //} fun registra(diretor: KotlinAlura.modelo.Diretor){
         //     this.total += diretor.bonificacao
         //}
 }

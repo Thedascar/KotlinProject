@@ -1,5 +1,8 @@
-package KotlinAlura
-    fun testaFuncionario2(){
+package KotlinAlura.teste
+
+import KotlinAlura.modelo.*
+
+fun testaFuncionario2(){
        val gerente = Gerente(
            nome = "Lucas",
            cpf = "123.456.789-98",
@@ -36,7 +39,7 @@ package KotlinAlura
             cpf = "789.456.123-28",
             salario = 1000.00
         )
-        println("KotlinAlura.Analista")
+        println("KotlinAlura.modelo.Analista")
         println("Nome: ${Lucas.nome}")
         println("Cpf: ${Lucas.cpf}")
         println("Salario S/Bonus: ${Lucas.salario}")
@@ -51,7 +54,7 @@ package KotlinAlura
             senha = 1234
         )
 
-        println("KotlinAlura.Gerente")
+        println("KotlinAlura.modelo.Gerente")
         println("Nome: ${Aline.nome}")
         println("Cpf: ${Aline.cpf}")
         println("Salario S/Bonus: ${Aline.salario}")
@@ -79,7 +82,7 @@ package KotlinAlura
             salario = 1251.45
         )
 
-        println("KotlinAlura.Diretor")
+        println("KotlinAlura.modelo.Diretor")
         println("Nome: ${Bob.nome}")
         println("Cpf: ${Bob.cpf}")
         println("Salario S/Bonus: ${Bob.salario}")
@@ -100,7 +103,7 @@ package KotlinAlura
             salario = 4000.00
         )
 
-        println("KotlinAlura.Analista")
+        println("KotlinAlura.modelo.Analista")
         println("Nome: ${Bacon.nome}")
         println("Cpf: ${Bacon.cpf}")
         println("Salario S/Bonus: ${Bacon.salario}")
@@ -108,7 +111,7 @@ package KotlinAlura
 
         println()
 
-        println("KotlinAlura.Auxiliar")
+        println("KotlinAlura.modelo.Auxiliar")
         println("Nome: ${James.nome}")
         println("Cpf: ${James.cpf}")
         println("Salario S/Bonus: ${James.salario}")

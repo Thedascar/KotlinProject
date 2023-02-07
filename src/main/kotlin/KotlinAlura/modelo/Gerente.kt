@@ -1,4 +1,4 @@
-package KotlinAlura
+package KotlinAlura.modelo
 
 class Gerente(
     nome: String,

@@ -1,4 +1,4 @@
-package KotlinAlura
+package KotlinAlura.modelo
 
 class contaPoupanca(
     titular: String,

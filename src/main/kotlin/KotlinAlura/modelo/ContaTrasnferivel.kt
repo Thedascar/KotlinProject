@@ -1,4 +1,5 @@
-package KotlinAlura
+package KotlinAlura.modelo
+
 abstract class ContaTrasnferivel(
     titular : String,
     numero : Int
