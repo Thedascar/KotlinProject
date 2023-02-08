@@ -1,10 +1,10 @@
-package br.com.alura.modelo
+package br.com.alura.bytebank.modelo
 
-import br.com.alura.modelo.Autenticavel
+import br.com.alura.bytebank.modelo.Autenticavel
 
 class SistemaInterno {
 
-    fun entra(admin: br.com.alura.modelo.Autenticavel, senha: Int){
+    fun entra(admin: br.com.alura.bytebank.modelo.Autenticavel, senha: Int){
         if(admin.autentica(senha)){
             println("Bem vindo ao Bytebank")
         }else{

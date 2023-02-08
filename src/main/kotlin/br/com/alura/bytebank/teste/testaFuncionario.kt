@@ -1,16 +1,15 @@
-package br.com.alura.teste
+package br.com.alura.bytebank.teste
 
-import KotlinAlura.modelo.*
 
 fun testaFuncionario2(){
-       val gerente = br.com.alura.modelo.Gerente(
+       val gerente = br.com.alura.bytebank.modelo.Gerente(
            nome = "Lucas",
            cpf = "123.456.789-98",
            salario = 1000.00,
            senha = 1000
        )
 
-        val diretora = br.com.alura.modelo.Diretor(
+        val diretora = br.com.alura.bytebank.modelo.Diretor(
             nome = "Aline",
             cpf = "789.456.123-78",
             salario = 2000.00,
@@ -18,14 +17,14 @@ fun testaFuncionario2(){
             plr = 2500.00
         )
 
-        val cliente = br.com.alura.modelo.Cliente(
+        val cliente = br.com.alura.bytebank.modelo.Cliente(
             nome = "José",
             cpf = "456.789.123-45",
             senha = 1000
         )
 
 
-        val sistema = br.com.alura.modelo.SistemaInterno()
+        val sistema = br.com.alura.bytebank.modelo.SistemaInterno()
         sistema.entra(gerente,1000)
         sistema.entra(diretora,200)
         sistema.entra(cliente,1000)
@@ -34,7 +33,7 @@ fun testaFuncionario2(){
 
     }
     fun testaFuncionario(){
-        val Lucas = br.com.alura.modelo.Analista(
+        val Lucas = br.com.alura.bytebank.modelo.Analista(
             nome = "Lucas Ramon",
             cpf = "789.456.123-28",
             salario = 1000.00
@@ -47,7 +46,7 @@ fun testaFuncionario2(){
 
         println()
 
-        val Aline = br.com.alura.modelo.Gerente(
+        val Aline = br.com.alura.bytebank.modelo.Gerente(
             nome = "Aline Lima",
             cpf = "123.456.789-10",
             salario = 2000.00,
@@ -68,7 +67,7 @@ fun testaFuncionario2(){
 
         println()
 
-        val Bob = br.com.alura.modelo.Diretor(
+        val Bob = br.com.alura.bytebank.modelo.Diretor(
             nome = "Bob",
             cpf = "498.498.645-58",
             salario = 10000.00,
@@ -76,7 +75,7 @@ fun testaFuncionario2(){
             plr = 2580.87
         )
 
-        val James = br.com.alura.modelo.Auxiliar(
+        val James = br.com.alura.bytebank.modelo.Auxiliar(
             nome = "James",
             cpf = "798.456.549-45",
             salario = 1251.45
@@ -97,7 +96,7 @@ fun testaFuncionario2(){
 
         println()
 
-        val Bacon = br.com.alura.modelo.Analista(
+        val Bacon = br.com.alura.bytebank.modelo.Analista(
             nome = "Bacon",
             cpf = "597.628.489.35",
             salario = 4000.00
@@ -119,7 +118,7 @@ fun testaFuncionario2(){
 
         println()
 
-        val calculadora = br.com.alura.modelo.CalculadoraBonificacao()
+        val calculadora = br.com.alura.bytebank.modelo.CalculadoraBonificacao()
         calculadora.registra(Lucas)
         calculadora.registra(Aline)
         calculadora.registra(Bob)
@@ -129,5 +128,5 @@ fun testaFuncionario2(){
     }
 
     fun main(){
-        br.com.alura.teste.testaFuncionario2()
+        br.com.alura.bytebank.teste.testaFuncionario2()
     }

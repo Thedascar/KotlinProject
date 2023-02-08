@@ -1,21 +1,21 @@
-package br.com.alura.teste
+package br.com.alura.bytebank.teste
 
-import br.com.alura.modelo.contaCorrente
-import br.com.alura.modelo.contaPoupanca
-import br.com.alura.modelo.contaSalario
+import br.com.alura.bytebank.modelo.contaCorrente
+import br.com.alura.bytebank.modelo.contaPoupanca
+import br.com.alura.bytebank.modelo.contaSalario
 
 fun testaContasDiferentes() {
-    val contaCorrente = br.com.alura.modelo.contaCorrente(
+    val contaCorrente = br.com.alura.bytebank.modelo.contaCorrente(
         titular = "Lucas Ramon",
         numero = 1570
     )
 
-    val contaPoupanca = br.com.alura.modelo.contaPoupanca(
+    val contaPoupanca = br.com.alura.bytebank.modelo.contaPoupanca(
         titular = "Aline Lima",
         numero = 7946
     )
 
-    val contaSalario = br.com.alura.modelo.contaSalario(
+    val contaSalario = br.com.alura.bytebank.modelo.contaSalario(
         titular = "Bob e Bacon",
         numero = 8956
     )
@@ -50,5 +50,5 @@ fun testaContasDiferentes() {
     println(contaSalario.saldo)
 }
 fun main(){
-    br.com.alura.teste.testaContasDiferentes()
+    br.com.alura.bytebank.teste.testaContasDiferentes()
 }

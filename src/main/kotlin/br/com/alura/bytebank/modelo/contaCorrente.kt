@@ -1,9 +1,9 @@
-package br.com.alura.modelo
+package br.com.alura.bytebank.modelo
 
 class contaCorrente(
     titular: String,
     numero: Int
-) : br.com.alura.modelo.ContaTrasnferivel(
+) : br.com.alura.bytebank.modelo.ContaTrasnferivel(
     titular = titular,
     numero = numero)
 {

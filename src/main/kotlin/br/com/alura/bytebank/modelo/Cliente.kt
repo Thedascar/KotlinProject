@@ -1,10 +1,10 @@
-package br.com.alura.modelo
+package br.com.alura.bytebank.modelo
 
 class Cliente(
     val nome: String,
     val cpf: String,
     private val senha: Int
-) : br.com.alura.modelo.Autenticavel {
+) : br.com.alura.bytebank.modelo.Autenticavel {
 
     override fun autentica(senha : Int) : Boolean {
         if (this.senha == senha) {

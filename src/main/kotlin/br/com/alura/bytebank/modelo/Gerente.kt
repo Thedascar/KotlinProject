@@ -1,11 +1,11 @@
-package br.com.alura.modelo
+package br.com.alura.bytebank.modelo
 
 class Gerente(
     nome: String,
     cpf: String,
     salario: Double,
     senha: Int
-) : br.com.alura.modelo.FuncionarioAdmin(
+) : br.com.alura.bytebank.modelo.FuncionarioAdmin(
     nome = nome,
     cpf = cpf,
     salario = salario,

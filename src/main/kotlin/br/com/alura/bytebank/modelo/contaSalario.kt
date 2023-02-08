@@ -1,9 +1,11 @@
-package br.com.alura.modelo
+package br.com.alura.bytebank.modelo
 
-class contaPoupanca(
+import br.com.alura.bytebank.modelo.Conta
+
+class contaSalario(
     titular: String,
     numero: Int
-) : br.com.alura.modelo.ContaTrasnferivel(
+) : br.com.alura.bytebank.modelo.Conta(
     titular = titular,
     numero = numero
 ) {
