@@ -1,7 +1,7 @@
 package br.com.alura.bytebank.modelo
 
 class contaPoupanca(
-    titular: String,
+    titular: Cliente,
     numero: Int
 ) : br.com.alura.bytebank.modelo.ContaTrasnferivel(
     titular = titular,

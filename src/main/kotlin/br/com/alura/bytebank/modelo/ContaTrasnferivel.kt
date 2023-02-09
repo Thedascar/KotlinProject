@@ -1,9 +1,9 @@
 package br.com.alura.bytebank.modelo
 
 abstract class ContaTrasnferivel(
-    titular : String,
+    titular : Cliente,
     numero : Int
-) : br.com.alura.bytebank.modelo.Conta(
+) : Conta(
         titular = titular,
         numero = numero
     ) {

@@ -1,28 +1,32 @@
 package br.com.alura.bytebank.teste
 
+import br.com.alura.bytebank.modelo.Cliente
 import br.com.alura.bytebank.modelo.contaCorrente
 import br.com.alura.bytebank.modelo.contaPoupanca
 import br.com.alura.bytebank.modelo.contaSalario
 
+
 fun testaContasDiferentes() {
-    val contaCorrente = br.com.alura.bytebank.modelo.contaCorrente(
-        titular = "Lucas Ramon",
+    val lucas = Cliente("Lucas Ramon","",1)
+    val contaCorrente = contaCorrente(
+        titular = lucas,
         numero = 1570
     )
 
-    val contaPoupanca = br.com.alura.bytebank.modelo.contaPoupanca(
-        titular = "Aline Lima",
+    val aline = Cliente("Aline Lima","",1)
+    val contaPoupanca = contaPoupanca(
+        titular = aline,
         numero = 7946
     )
 
-    val contaSalario = br.com.alura.bytebank.modelo.contaSalario(
-        titular = "Bob e Bacon",
+    val baconebob = Cliente("Bacon e Bob","",1)
+    val contaSalario = contaSalario(
+        titular = baconebob,
         numero = 8956
     )
 
-    println("KotlinAlura.modelo.Conta Corrente")
-    println("Titular: ${contaCorrente.titular}")
-    println("Número: ${contaCorrente.numero}")
+    println("Conta Corrente")
+    println("Titular: ${lucas.nome}")
     contaCorrente.deposita(1000.00)
     contaCorrente.saca(100.00)
     contaCorrente.transfere(contaPoupanca, 500.00)
@@ -31,8 +35,8 @@ fun testaContasDiferentes() {
 
     println()
 
-    println("KotlinAlura.modelo.Conta Poupança")
-    println("Titular: ${contaPoupanca.titular}")
+    println("Conta Poupança")
+    println("Titular: ${aline.nome}")
     println("Número: ${contaPoupanca.numero}")
     contaPoupanca.deposita(1000.00)
     contaPoupanca.saca(100.00)
@@ -41,8 +45,8 @@ fun testaContasDiferentes() {
 
     println()
 
-    println("KotlinAlura.modelo.Conta Salario")
-    println("Titular: ${contaSalario.titular}")
+    println("Conta Salario")
+    println("Titular: ${baconebob.nome}")
     println("Número: ${contaSalario.numero}")
     contaSalario.deposita(500.00)
     contaSalario.saca(200.00)
@@ -50,5 +54,5 @@ fun testaContasDiferentes() {
     println(contaSalario.saldo)
 }
 fun main(){
-    br.com.alura.bytebank.teste.testaContasDiferentes()
+    testaContasDiferentes()
 }
