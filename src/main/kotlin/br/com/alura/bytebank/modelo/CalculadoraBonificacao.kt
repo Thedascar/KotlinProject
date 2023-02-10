@@ -4,7 +4,7 @@ class CalculadoraBonificacao {
 
     var total: Double = 0.0
         private set
-    fun registra(funcionario: br.com.alura.bytebank.modelo.Funcionario){
+    fun registra(funcionario: Funcionario){
          this.total += funcionario.bonificacao
     }
 // fun registra(gerente: KotlinAlura.modelo.Gerente){
