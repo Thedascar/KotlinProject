@@ -3,14 +3,19 @@ package br.com.alura.bytebank
 import br.com.alura.bytebank.modelo.Endereco
 
 fun main() {
-    val endereco = Endereco()
+    val endereco = Endereco(logradouro = "R Existente",cep = "00000-000")
+    val enderecoNovo = Endereco(logradouro = "Av Horacio Klabin",cep = "00000-000")
+    println(endereco.equals(enderecoNovo))
+    println(endereco.equals(endereco))
+    println(endereco.hashCode())
+    println(enderecoNovo.hashCode())
+    println(endereco.toString())
+    println(enderecoNovo.toString())
 
-    imprime(Unit)
-    imprime(1)
-    imprime(1.5)
-    imprime(endereco)
+
 }
 
-fun imprime(valor: Any) : Unit{
+fun imprime(valor: Any) : Any{
     println(valor)
+    return valor
 }

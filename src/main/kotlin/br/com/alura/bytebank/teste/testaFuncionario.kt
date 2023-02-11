@@ -1,12 +1,16 @@
 package br.com.alura.bytebank.teste
 
+import br.com.alura.bytebank.modelo.Endereco
+
 
 fun testaFuncionario2(){
+
+       val enderecoNovo = Endereco("R janaina")
        val gerente = br.com.alura.bytebank.modelo.Gerente(
            nome = "Lucas",
            cpf = "123.456.789-98",
            salario = 1000.00,
-           senha = 1000
+           senha = 1000,
        )
 
         val diretora = br.com.alura.bytebank.modelo.Diretor(
@@ -20,7 +24,8 @@ fun testaFuncionario2(){
         val cliente = br.com.alura.bytebank.modelo.Cliente(
             nome = "José",
             cpf = "456.789.123-45",
-            senha = 1000
+            senha = 1000,
+            endereco = enderecoNovo
         )
 
 
@@ -28,6 +33,7 @@ fun testaFuncionario2(){
         sistema.entra(gerente,1000)
         sistema.entra(diretora,200)
         sistema.entra(cliente,1000)
+        println(cliente.endereco)
 
 
 
@@ -128,5 +134,5 @@ fun testaFuncionario2(){
     }
 
     fun main(){
-        br.com.alura.bytebank.teste.testaFuncionario2()
+        testaFuncionario2()
     }
